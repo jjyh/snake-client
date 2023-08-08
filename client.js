@@ -11,6 +11,8 @@ const connect = function () {
   conn.on("data", (data) => {
     console.log(data.toString());// code that does something when the connection is first established
   });
+    console.log ("Successfully connected to game server");
+    conn.write("Name: INI")
   return conn;
 };
 
