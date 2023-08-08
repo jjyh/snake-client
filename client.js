@@ -12,7 +12,12 @@ const connect = function () {
     console.log(data.toString());// code that does something when the connection is first established
   });
     console.log ("Successfully connected to game server");
-    conn.write("Name: INI")
+    conn.write("Name: INI");
+    // conn.write("Move: up");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 50);
+
   return conn;
 };
 
