@@ -20,7 +20,7 @@ const handleUserInput = function (key) {
     process.exit();
   }
   if (key === 'w') {
-    console.log("Move: up");
+    connection.write("Move: up");
   }
   if (key === 'a') {
     connection.write("Move: left");
@@ -31,9 +31,9 @@ const handleUserInput = function (key) {
   if (key === 'd') {
     connection.write("Move: right");
   }
-  // if (key === '9') {
-  //   connection.write("Say: chomp");
-  // } 
+  if (key === '9') {
+    connection.write("Say: chomp");
+  } 
 };
 
 module.exports = {
